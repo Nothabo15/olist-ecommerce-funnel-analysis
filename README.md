@@ -90,6 +90,41 @@ The raw Olist dataset required significant preparation before it was fit for ana
 
 ---
 
+### Phase 2 — Exploratory Data Analysis
+
+*File: `sql/olist_eda.sql` 12 structured queries*
+
+| Step | Analysis | Business Question Answered |  
+|---|---|---|  
+| 1 | Executive KPI overview | What is the platform's headline performance? |  
+| 2 | Funnel drop-off analysis (CTE) | At which stage are the most orders being lost? |   
+| 3 | Monthly cohort performance | How has performance changed as the platform scaled? |   
+| 4 | Delivery speed distribution (window functions) | What is the standard customer delivery experience? |   
+| 5 | Delivery performance vs satisfaction | Does delivery speed actually drive review scores? |    
+| 6 | Payment method performance | Which payment types drive the most revenue and best outcomes? |   
+| 7 | Geographic performance analysis | Which states lead and which lag in delivery efficiency? |   
+| 8 | Approval delay impact | Does a slow approval process affect downstream fulfilment? |   
+| 9 | Review participation funnel | What proportion of delivered orders generate reviews? |   
+| 10 | High-risk order identification | Which specific orders represent the greatest operational risk? |   
+| 11 | Revenue analysis by funnel completion | How much revenue is exposed to late and failed delivery? |   
+| 12 | Delivery time vs review score correlation | Is the relationship between speed and satisfaction linear? |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

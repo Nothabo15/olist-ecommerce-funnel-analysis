@@ -62,6 +62,57 @@ The central business question driving this analysis:
 
 ---
 
+## Methodology
+
+### Phase 1 — Data Cleaning & Feature Engineering
+
+*File: `sql/olist_final_clean_script.sql`  13 structured steps*
+
+The raw Olist dataset required significant preparation before it was fit for analysis. The cleaning pipeline was built in SQLite and executed in strict logical sequence:
+
+| Step | Action | Purpose |  
+|---|---|---|   
+| 1 | Base table creation with `DISTINCT` deduplication | Remove duplicate order records |   
+| 2 | Data integrity checks — duplicates and nulls | Understand data completeness before any transformation |   
+| 3 | Remove logically invalid records | Delete orders delivered or approved before purchase timestamp |   
+| 4 | Standardise order status with `LOWER(TRIM())` | Eliminate case inconsistencies across status values |   
+| 5 | Create binary funnel flags (`is_created`, `is_approved`, `is_shipped`, `is_delivered`) | Enable stage-by-stage funnel tracking |  
+| 6 | Time-based feature engineering using `julianday()` | Calculate `approval_days`, `shipping_days`, `delivery_days`, `total_fulfillment_days` |   
+| 7 | Null out negative durations | Remove physically impossible time calculations |   
+| 8 | Delivery performance classification | Classify each order as On Time / Late / Not Delivered vs estimated date |  
+| 9 | Join order reviews (`LEFT JOIN`) | Attach customer satisfaction scores to order records |   
+| 10 | Clean review scores | Null out scores outside valid 1–5 range |    
+| 11 | Join payment data | Attach payment type and value to each order |   
+| 12 | Join customer location | Attach state-level geographic data |    
+| 13 | Final validation checks | Verify funnel totals, delivery distribution, and null counts |    
+
+**Output:** `final_cleaned_dataset` a single analytical table joining orders, reviews, payments, and customer location, ready for analysis.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

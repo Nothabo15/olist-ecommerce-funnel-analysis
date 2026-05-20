@@ -128,6 +128,24 @@ The raw Olist dataset required significant preparation before it was fit for ana
 
 ---
 
+## Key Findings
+
+### 1. Order Funnel — 96.98% End-to-End Retention
+
+```
+Stage               Orders     Drop-off    Drop-off Rate
+─────────────────────────────────────────────────────────
+Total Created       104,458         —              —
+Total Approved      104,301       157           0.15%   ← payment failures
+Total Shipped       102,579     1,722           1.65%   ← largest loss point
+Total Delivered     101,324     1,255           1.22%   ← logistics failures
+```
+
+The platform retains 96.98% of orders through to successful delivery. However, the **approval-to-shipment gap is the single largest point of order loss** 1,722 orders failing to progress from approval to shipment. This points directly to seller-side operational failures: stock unavailability, slow pick-and-pack processes, or warehouse capacity constraints. Payment processing (0.15% loss) is not the problem. Fulfilment execution is.
+
+
+
+
 
 
 

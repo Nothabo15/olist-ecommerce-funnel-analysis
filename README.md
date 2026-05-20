@@ -117,7 +117,23 @@ The raw Olist dataset required significant preparation before it was fit for ana
 
 | Chart | Type | Business Purpose |  
 |---|---|---|   
-| KPI Summary Bar | Scorecards | Headline metrics at a glance for executive stakeholders |    
+| KPI Summary Bar | Scorecards | Headline metrics at a glance for executive stakeholders |   
+| Order Funnel | Horizontal bar | Visual representation of order attrition across all stages |   
+| Monthly Order Volume | Line chart | Growth trajectory with Black Friday peak annotated |    
+| Order Outcome Distribution | Horizontal bar | On Time vs Late vs Not Delivered at volume |   
+| Delivery Speed Distribution | Horizontal bar | Customer experience breakdown by delivery window |   
+| Review Score by Delivery Status | Horizontal bar | Direct link between logistics performance and satisfaction |   
+| Payment Method Mix | Horizontal bar | Transaction share and revenue by payment type |   
+| Geographic Performance | Color-coded table | State-by-state delivery speed, rate, and satisfaction |
+
+---
+
+
+
+
+
+
+
 
 
 

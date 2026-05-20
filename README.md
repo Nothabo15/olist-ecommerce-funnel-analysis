@@ -109,6 +109,23 @@ The raw Olist dataset required significant preparation before it was fit for ana
 | 11 | Revenue analysis by funnel completion | How much revenue is exposed to late and failed delivery? |   
 | 12 | Delivery time vs review score correlation | Is the relationship between speed and satisfaction linear? |
 
+---
+
+### Phase 3 — Interactive Dashboard
+
+*Platform: Tableau Public 7 charts, cross-filtering enabled*
+
+| Chart | Type | Business Purpose |  
+|---|---|---|   
+| KPI Summary Bar | Scorecards | Headline metrics at a glance for executive stakeholders |    
+
+
+
+
+
+
+
+
 
 
 

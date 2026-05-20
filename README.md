@@ -52,6 +52,22 @@ The central business question driving this analysis:
 | Avg Delivery Time | 12.58 days | Primary improvement opportunity |   
 | Orders Exceeding 15 Days | 33.35% | Critical logistics gap |   
 
+### Three findings that define the business priority
+
+**1. Delivery speed is the single largest driver of customer satisfaction.** Customers who receive orders in 0–3 days give an average of 4.48 stars. Customers who wait 15+ days give 3.72 stars. That 0.76-point gap across 33% of all orders represents a material, measurable damage to marketplace reputation.
+
+**2. Late delivery cuts satisfaction scores by 40%.** On-time orders average 4.29 stars. Late orders average 2.56 stars. This is not a marginal difference,it is the difference between a loyal customer and a churned one.
+
+**3. $1,947,012 in revenue is at risk every year.** Orders that are late or undelivered represent 12.1% of total revenue at higher-than-average order values (late: $166.24 avg, undelivered: $186.97 avg). High-value orders are disproportionately exposed to fulfilment failure.
+
+---
+
+
+
+
+
+
+
 
 
 

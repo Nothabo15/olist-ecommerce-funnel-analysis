@@ -22,6 +22,59 @@
 
 ![Olist E-Commerce Funnel Performance Dashboard](dashboard/Olist%20Dashboard.png)
 
+*Cross-filtering enabled click any chart element to filter the entire dashboard*
+
+---
+
+## Project Overview
+
+This project delivers a full end-to-end analysis of the **Olist Brazilian e-commerce marketplace**, examining 104,458 orders across two years of platform operations.
+
+The workflow covers every stage of the analytics pipeline:
+
+**Raw Data → SQL Cleaning → Feature Engineering → Exploratory Analysis → Executive Dashboard → Business Recommendations**
+
+The central business question driving this analysis:
+
+> *"Where is the marketplace losing orders, revenue, and customers and what should leadership prioritise to fix it?"*
+
+---
+
+## Executive Summary
+
+| Metric | Value | Signal |   
+|---|---|---|   
+| Total Orders | 104,458 | Strong platform scale |   
+| Total Revenue Analysed | $16,081,420 | High-value marketplace |   
+| Delivery Rate | 97.00% | Operationally strong |   
+| Avg Review Score | 4.08 / 5 | Positive customer sentiment |    
+| Avg Order Value | $153.90 | Healthy basket size |   
+| Avg Delivery Time | 12.58 days | Primary improvement opportunity |   
+| Orders Exceeding 15 Days | 33.35% | Critical logistics gap |   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

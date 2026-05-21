@@ -158,6 +158,59 @@ The platform scaled from near-zero to 7,933 orders in a single month within 14 m
 
 ---
 
+### 3. Delivery Speed — The Standard Experience Is Not Fast Enough
+
+| Window | Orders | Share | Avg Review Score |   
+|---|---|---|---|   
+|  0–3 Days | ~4,990 | 4.78% | 4.48  |  
+|  4–7 Days | ~22,370 | 21.42% | 4.40 |  
+|  8–14 Days | ~42,270 | 40.45% | 4.31|  
+| 15+ Days | ~34,848 | 33.35% | 3.72 |  
+
+The typical Olist customer waits 8–14 days for their order. Over a third wait more than 15 days. The relationship between speed and satisfaction is clear and consistent: every delivery window improvement corresponds to a measurable increase in review score. Fast delivery (0–3 days) reaches fewer than 5% of customers despite generating the highest satisfaction at 4.48.
+
+---
+
+### 4. Customer Satisfaction — Delivery Decides the Review
+
+| Delivery Status | Avg Review | Orders | Revenue |  
+|---|---|---|---|   
+|  On Time | 4.29  | 93,158 | $14,134,408 |  
+|  Late | 2.56  | 8,166 | $1,357,315 |  
+|  Not Delivered | 1.76  | 3,154 | $589,697 |  
+
+The correlation between delivery and satisfaction is direct and severe. A late delivery reduces the average review score by **40%**. A failed delivery produces reviews **59% lower** than on-time delivery. The review score by delivery days confirms this is a linear relationship:
+
+| Review Score | Avg Delivery Days |  
+|---|---|  
+| 1  | 21.3 days |
+| 2  | 16.7 days |
+| 3  | 14.2 days |
+| 4 | 12.3 days |
+| 5  | 10.7 days |
+
+Every additional day of delivery time moves customers toward lower scores. Every day saved moves them toward five stars.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

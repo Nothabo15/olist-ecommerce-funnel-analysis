@@ -210,6 +210,81 @@ São Paulo delivers in 9 days and earns 4.17 stars. Bahia takes 19 days and earn
 
 ---
 
+### 6. Payment Performance — Credit Card Dominates, Vouchers Underperform
+
+| Payment Type | Orders | Share | Avg Order Value | Delivery Rate |   
+|---|---|---|---|---|   
+| Credit Card | ~80,330 | 76.95% | $163.14 | 97.1% |
+| Boleto | ~20,790 | 19.90% | $144.99 | 97.0% |  
+| Voucher | ~4,042 | 3.87% | $65.50 | 95.2% |
+| Debit Card | ~1,608 | 1.54% | $142.40 | 97.1% |
+
+Credit card transactions drive the highest revenue per order at R$163.14 and maintain strong delivery rates. Voucher orders generate 60% less revenue per transaction and have the lowest delivery rate at 95.2%, nearly 2 percentage points below credit card. Boleto's 19.9% share reflects Brazil's structural reliance on cash-equivalent payment infrastructure and represents a customer segment worth retaining.
+
+---
+
+### 7. Approval Speed — 82.5% of Orders Approved Same Day
+
+| Approval Speed | Orders | Share | Delivery Rate | Avg Review |   
+|---|---|---|---|---|   
+| Same Day | 86,152 | 82.5% | 97.2% | 4.10  |  
+| 1–3 Days | 15,839 | 15.2% | 96.7% | 4.04  |
+| 3+ Days | 2,311 | 2.2% | 96.3% | 4.00  |  
+
+Same-day approval is already the standard for 82.5% of orders. The 2,311 orders taking more than 3 days to approve show measurably lower delivery rates and satisfaction scores. While the absolute impact is smaller than logistics delays, streamlining the remaining slow approvals is a low-cost improvement with direct customer experience benefit.
+
+---
+
+## Business Recommendations
+
+| Priority | Recommendation | Data Basis | Expected Outcome |
+|---|---|---|---|
+| Critical | Audit the approval-to-shipment process, identify why 1,722 orders fail to progress from approval to shipping | Step 2 funnel analysis | Reduce the 1.65% shipment drop-off; recover lost orders |
+| Critical | Build dedicated logistics infrastructure for BA, AM, RN and remote northern states averaging 19+ day delivery | Step 7 geographic analysis | Close the geographic experience gap; lift review scores in underserved regions |
+| High | Expand fast-delivery capability in SP and major urban hubs, only 4.78% of orders currently delivered within 3 days | Step 4 delivery speed analysis | Fast delivery generates 4.48 vs 3.72 for 15+ days; direct NPS improvement |  
+| High | Implement real-time monitoring for high-value orders at risk of delay, late and undelivered orders average $166–187, above the $153 platform average | Step 10 & 11 risk and revenue analysis | Protect $1.9M in at-risk annual revenue; reduce premium customer churn |  
+| Medium | Investigate voucher fulfilment pipeline, 95.2% delivery rate vs 97.1% for credit card indicates a process gap specific to this payment type | Step 6 payment analysis | Standardise delivery performance across all payment methods |  
+| Medium | Target same-day approval as a platform SLA, 17.5% of orders still take 1+ days to approve with measurable downstream impact | Step 8 approval analysis | Marginal gains at scale; 2,311 slow-approval orders show lower satisfaction |
+
+---
+
+## SQL Techniques Demonstrated
+
+```sql
+-- Funnel analysis using CTE and UNION ALL (Step 2)
+WITH funnel AS (
+    SELECT 
+        SUM(is_created) AS created,
+        SUM(is_approved) AS approved,
+        SUM(is_shipped) AS shipped,
+        SUM(is_delivered) AS delivered
+    FROM final_cleaned_dataset
+)
+SELECT 'Approved → Shipped' AS stage,
+       approved - shipped AS drop_off,
+       ROUND((approved - shipped) * 100.0 / approved, 2) AS drop_off_rate
+FROM funnel;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -193,6 +193,33 @@ Every additional day of delivery time moves customers toward lower scores. Every
 
 ---
 
+### 5. Geographic Performance — A Two-Speed Marketplace
+
+| State | Orders | Avg Delivery Days | Delivery Rate | Avg Review |  
+|---|---|---|---|---|    
+|  SP | 41,736 | 9 days | 97.0% | 4.17  |
+|  RJ | 12,848 | 15 days | 96.1% | 3.88  |
+|  MG | 11,631 | 12 days | 97.6% | 4.14  |
+|  RS | 5,466 | 15 days | 97.8% | 4.13  |
+|  PR | 5,045 | 12 days | 97.5% | 4.18  |
+| SC | 3,636 | 15 days | 97.6% | 4.07  |
+|  BA | 3,380 | 19 days | 96.5% | 3.87  |
+| DF | 2,140 | 13 days | 97.2% | 4.06  |
+
+São Paulo delivers in 9 days and earns 4.17 stars. Bahia takes 19 days and earns 3.87 stars. This is not a minor regional variation, it is a structurally different customer experience for over 3,000 customers in a single state. Customers in remote northern regions are systematically receiving a slower, lower-satisfaction experience through no fault of their own. Geographic logistics infrastructure is the root cause.
+
+---
+
+
+
+
+
+
+
+
+
+
+
 
 
 

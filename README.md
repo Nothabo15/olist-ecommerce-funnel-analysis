@@ -143,6 +143,29 @@ Total Delivered     101,324     1,255           1.22%   ← logistics failures
 
 The platform retains 96.98% of orders through to successful delivery. However, the **approval-to-shipment gap is the single largest point of order loss** 1,722 orders failing to progress from approval to shipment. This points directly to seller-side operational failures: stock unavailability, slow pick-and-pack processes, or warehouse capacity constraints. Payment processing (0.15% loss) is not the problem. Fulfilment execution is.
 
+---
+
+### 2. Monthly Growth — 818% Volume Increase in 12 Months
+
+| Period | Monthly Orders | Context |   
+|---|---|---|   
+| Sept 2016 | 4 | Platform launch |  
+| Jan 2017 | 864 | Early growth phase |   
+| Nov 2017 | 7,933 | Black Friday peak |   
+| 2018 average | ~7,000 | Sustained post-peak plateau |   
+
+The platform scaled from near-zero to 7,933 orders in a single month within 14 months of launch, an 818% increase. Critically, the 97% delivery rate was maintained throughout this scaling period, indicating that fulfilment infrastructure kept pace with demand growth. The persistent 33% of orders exceeding 15 days suggests, however, that **delivery speed optimisation did not scale at the same rate as order volume.**
+
+---
+
+
+
+
+
+
+
+
+
 
 
 

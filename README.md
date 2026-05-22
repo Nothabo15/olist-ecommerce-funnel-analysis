@@ -280,6 +280,35 @@ SET delivery_days = julianday(order_delivered_customer_date)
 
 ---
 
+## Technical Skills Demonstrated
+
+| Category | Detail |
+|---|---|
+| **SQL** | CTEs, window functions (`SUM() OVER()`), `julianday()` date arithmetic, `CASE` classification, `LEFT JOIN` across 4 tables, `ALTER TABLE`, `UPDATE`, `DELETE`, data validation queries |
+| **Data Cleaning** | Deduplication, null auditing, invalid record removal, negative duration handling, cross-table joins, review score validation |
+| **Feature Engineering** | Binary funnel flags, time-based duration fields, delivery status classification, cohort date extraction with `strftime()` |
+| **Analytics** | Funnel analysis, cohort performance, correlation analysis, customer segmentation, geographic analysis, revenue exposure quantification, KPI definition |
+| **Data Visualisation** | Tableau Public dashboard design, calculated fields, table calculations (`Percent of Total`), reference lines, diverging color palettes, cross-dashboard filter actions |
+| **Business Communication** | Executive summary writing, insight-to-recommendation translation, stakeholder-ready reporting, data storytelling |
+
+---
+
+## About the Analyst
+
+I am a data analyst with a **Master's degree in Accounting** and a **Google Data Analytics Certificate (Coursera)**, with an active portfolio of end-to-end analytics projects on GitHub.
+
+My background spans financial analysis, accounting, and education, giving me the ability to connect data findings to business decisions in language that both technical and non-technical stakeholders can act on. I am actively transitioning into a full-time data analytics role and building a portfolio that demonstrates real analytical capability, not just tool familiarity.
+
+This project represents a complete analytics pipeline built independently: from raw Kaggle data through a 13-step SQL cleaning process, 12-step exploratory analysis, and an interactive Tableau dashboard with cross-filtering and executive-level design.
+
+---
+
+<div align="center">
+
+**[GitHub Portfolio](https://github.com/Nothabo15)** · **[LinkedIn](https://www.linkedin.com/in/nothabo-michelle-moyo-a38840378/)** · **[Live Tableau Dashboard](https://public.tableau.com/authoring/OlistE-CommerceFunnelPerformanceDashboard/Dashboard1#1)**
+
+
+
 
 
 

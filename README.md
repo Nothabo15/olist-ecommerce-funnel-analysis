@@ -265,6 +265,22 @@ SELECT 'Approved → Shipped' AS stage,
        ROUND((approved - shipped) * 100.0 / approved, 2) AS drop_off_rate
 FROM funnel;
 
+-- Window function for percentage distribution (Step 4)
+SELECT delivery_bucket,
+       COUNT(*) AS orders,
+       ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 2) AS percentage
+FROM final_cleaned_dataset
+GROUP BY delivery_bucket;
+
+-- Date feature engineering using julianday() (Cleaning Step 6)
+UPDATE clean_orders
+SET delivery_days = julianday(order_delivered_customer_date) 
+                  - julianday(order_purchase_timestamp);
+```
+
+---
+
+
 
 
 

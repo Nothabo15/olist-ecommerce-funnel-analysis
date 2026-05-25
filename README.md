@@ -8,7 +8,7 @@
 **Tools: SQLite · Tableau Public**    
 **Period: October 2016 – August 2018**
 
-[![Tableau](https://img.shields.io/badge/Live%20Dashboard-Tableau%20Public-1F77B4?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/authoring/OlistE-CommerceFunnelPerformanceDashboard/Dashboard1#1)
+[![Tableau](https://img.shields.io/badge/Live%20Dashboard-Tableau%20Public-1F77B4?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/views/OlistE-CommerceFunnelPerformanceDashboard/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 [![SQL](https://img.shields.io/badge/Data%20Cleaning-SQLite-F48024?style=for-the-badge&logo=sqlite&logoColor=white)](sql/olist_final_clean_script.sql)
 [![EDA](https://img.shields.io/badge/Analysis-12%20SQL%20Queries-4CAF50?style=for-the-badge&logo=sqlite&logoColor=white)](sql/olist_eda.sql)
 [![Dataset](https://img.shields.io/badge/Dataset-104%2C478%20Orders-9C27B0?style=for-the-badge)](data/final_cleaned_dataset.csv)
@@ -18,7 +18,7 @@
 ---
 
 ## Live Dashboard
-> **[Click here to explore the interactive dashboard →](https://public.tableau.com/authoring/OlistE-CommerceFunnelPerformanceDashboard/Dashboard1#1)**
+> **[Click here to explore the interactive dashboard →](https://public.tableau.com/views/OlistE-CommerceFunnelPerformanceDashboard/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 ![Olist E-Commerce Funnel Performance Dashboard](dashboard/Olist%20Dashboard.png)
 
@@ -46,10 +46,10 @@ The central business question driving this analysis:
 | Metric | Value | Signal |   
 |---|---|---|   
 | Total Orders | 104,458 | Strong platform scale |   
-| Total Revenue Analysed | $16,081,420 | High-value marketplace |   
+| Total Revenue Analysed | R$16,081,420 | High-value marketplace |   
 | Delivery Rate | 97.00% | Operationally strong |   
 | Avg Review Score | 4.08 / 5 | Positive customer sentiment |    
-| Avg Order Value | $153.90 | Healthy basket size |   
+| Avg Order Value | R$153.90 | Healthy basket size |   
 | Avg Delivery Time | 12.58 days | Primary improvement opportunity |   
 | Orders Exceeding 15 Days | 33.35% | Critical logistics gap |   
 
@@ -59,7 +59,7 @@ The central business question driving this analysis:
 
 **2. Late delivery cuts satisfaction scores by 40%.** On-time orders average 4.29 stars. Late orders average 2.56 stars. This is not a marginal difference,it is the difference between a loyal customer and a churned one.
 
-**3. $1,947,012 in revenue is at risk every year.** Orders that are late or undelivered represent 12.1% of total revenue at higher-than-average order values (late: $166.24 avg, undelivered: $186.97 avg). High-value orders are disproportionately exposed to fulfilment failure.
+**3. R$1,947,012 in revenue is at risk every year.** Orders that are late or undelivered represent 12.1% of total revenue at higher-than-average order values (late: R$166.24 avg, undelivered: R$186.97 avg). High-value orders are disproportionately exposed to fulfilment failure.
 
 ---
 
@@ -176,9 +176,9 @@ The typical Olist customer waits 8–14 days for their order. Over a third wait 
 
 | Delivery Status | Avg Review | Orders | Revenue |  
 |---|---|---|---|   
-|  On Time | 4.29  | 93,158 | $14,134,408 |  
-|  Late | 2.56  | 8,166 | $1,357,315 |  
-|  Not Delivered | 1.76  | 3,154 | $589,697 |  
+|  On Time | 4.29  | 93,158 | R$14,134,408 |  
+|  Late | 2.56  | 8,166 | R$1,357,315 |  
+|  Not Delivered | 1.76  | 3,154 | R$589,697 |  
 
 The correlation between delivery and satisfaction is direct and severe. A late delivery reduces the average review score by **40%**. A failed delivery produces reviews **59% lower** than on-time delivery. The review score by delivery days confirms this is a linear relationship:
 
@@ -215,10 +215,10 @@ São Paulo delivers in 9 days and earns 4.17 stars. Bahia takes 19 days and earn
 
 | Payment Type | Orders | Share | Avg Order Value | Delivery Rate |   
 |---|---|---|---|---|   
-| Credit Card | ~80,330 | 76.95% | $163.14 | 97.1% |
-| Boleto | ~20,790 | 19.90% | $144.99 | 97.0% |  
-| Voucher | ~4,042 | 3.87% | $65.50 | 95.2% |
-| Debit Card | ~1,608 | 1.54% | $142.40 | 97.1% |
+| Credit Card | ~80,330 | 76.95% | R$163.14 | 97.1% |
+| Boleto | ~20,790 | 19.90% | R$144.99 | 97.0% |  
+| Voucher | ~4,042 | 3.87% | R$65.50 | 95.2% |
+| Debit Card | ~1,608 | 1.54% | R$142.40 | 97.1% |
 
 Credit card transactions drive the highest revenue per order at R$163.14 and maintain strong delivery rates. Voucher orders generate 60% less revenue per transaction and have the lowest delivery rate at 95.2%, nearly 2 percentage points below credit card. Boleto's 19.9% share reflects Brazil's structural reliance on cash-equivalent payment infrastructure and represents a customer segment worth retaining.
 
@@ -243,7 +243,7 @@ Same-day approval is already the standard for 82.5% of orders. The 2,311 orders 
 | Critical | Audit the approval-to-shipment process, identify why 1,722 orders fail to progress from approval to shipping | Step 2 funnel analysis | Reduce the 1.65% shipment drop-off; recover lost orders |
 | Critical | Build dedicated logistics infrastructure for BA, AM, RN and remote northern states averaging 19+ day delivery | Step 7 geographic analysis | Close the geographic experience gap; lift review scores in underserved regions |
 | High | Expand fast-delivery capability in SP and major urban hubs, only 4.78% of orders currently delivered within 3 days | Step 4 delivery speed analysis | Fast delivery generates 4.48 vs 3.72 for 15+ days; direct NPS improvement |  
-| High | Implement real-time monitoring for high-value orders at risk of delay, late and undelivered orders average $166–187, above the $153 platform average | Step 10 & 11 risk and revenue analysis | Protect $1.9M in at-risk annual revenue; reduce premium customer churn |  
+| High | Implement real-time monitoring for high-value orders at risk of delay, late and undelivered orders average R$166–187, above the R$153 platform average | Step 10 & 11 risk and revenue analysis | Protect R$1.9M in at-risk annual revenue; reduce premium customer churn |  
 | Medium | Investigate voucher fulfilment pipeline, 95.2% delivery rate vs 97.1% for credit card indicates a process gap specific to this payment type | Step 6 payment analysis | Standardise delivery performance across all payment methods |  
 | Medium | Target same-day approval as a platform SLA, 17.5% of orders still take 1+ days to approve with measurable downstream impact | Step 8 approval analysis | Marginal gains at scale; 2,311 slow-approval orders show lower satisfaction |
 
@@ -306,157 +306,5 @@ This project represents a complete analytics pipeline built independently: from 
 
 <div align="center">
 
-**[GitHub Portfolio](https://github.com/Nothabo15)** · **[LinkedIn](https://www.linkedin.com/in/nothabo-michelle-moyo-a38840378/)** · **[Live Tableau Dashboard](https://public.tableau.com/authoring/OlistE-CommerceFunnelPerformanceDashboard/Dashboard1#1)**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**[GitHub Portfolio](https://github.com/Nothabo15)** · **[LinkedIn](https://www.linkedin.com/in/nothabo-michelle-moyo-a38840378/)** · **[Live Tableau Dashboard](https://public.tableau.com/views/OlistE-CommerceFunnelPerformanceDashboard/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+</div>

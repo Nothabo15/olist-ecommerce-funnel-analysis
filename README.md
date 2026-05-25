@@ -41,6 +41,7 @@ The central business question driving this analysis:
 ---
 
 ## Executive Summary
+> *Note: All monetary values in this analysis are reported in Brazilian Real (BRL/ R$)*
 
 | Metric | Value | Signal |   
 |---|---|---|   
